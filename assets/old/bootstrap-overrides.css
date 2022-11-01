@@ -1,0 +1,312 @@
+.btn {
+    border-radius: 10px;
+}
+
+/* .btn:hover {
+    border: none;
+} */
+
+.btn-primary {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--brand-primary-75-hex);
+    border-color: var(--brand-primary-75-hex);
+}
+
+.btn-secondary, .btn-outline-primary {
+    background-color: transparent;
+    border: 1px solid var(--brand-primary);
+    color: var(--brand-primary);
+}
+
+.btn-secondary:hover, .btn-outline-primary:hover {
+    background-color: transparent;
+    border: 1px solid var(--brand-primary-75-hex);
+    color: var(--brand-primary-75-hex);
+}
+
+.card {
+    border-radius: 30px;
+    border: none;
+    filter: drop-shadow(0px 6px 10px var(--shadow));
+}
+
+h3.card-title {
+    font-family: 'Barlow-SemiBold', sans-serif;
+    color: #595959;
+}
+
+/*
+
+from myappvestor css
+
+.alert {
+    border-radius: 10px; 
+}
+
+.alert-success {
+    background: var(--success-25);
+    border: 1px solid var(--success);
+    border-left: 10px solid var(--success);
+}
+
+.alert-danger {
+    background: var(--danger-25);
+    border: 1px solid var(--danger);
+    border-left: 10px solid var(--danger);
+}
+
+.alert-warning {
+    background: var(--yellow-25);
+    border: 1px solid var(--yellow);
+    border-left: 10px solid var(--yellow);
+}
+
+.alert .alert-title {
+    color: var(--alert-title);
+}
+
+.badge {
+    font-size: .95em;
+   font-weight: 500;
+}
+
+.btn {
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.btn-primary:disabled, .btn-secondary:disabled, .btn-danger:disabled, .btn-warning:disabled {
+    border: 1px solid transparent;
+    background-color: var(--muted-50);
+    color: white;
+}
+
+.btn-outline-primary:disabled, .btn-outline-secondary:disabled, .btn-outline-danger:disabled, .btn-outline-warning:disabled {
+    border: 1px solid var(--muted-50);
+    background-color: transparent;
+    color: var(--muted-50);
+}
+
+.btn-danger {
+    border: solid 1px var(--danger);
+    background-color: var(--danger);
+}
+
+    .btn-danger:hover {
+        background-color: var(--danger-75);
+        border: 1px solid var(--danger-75);
+        border-color: transparent;
+    }
+
+    .btn-danger:focus, .btn-danger.focus {
+        color: #fff;
+        background-color: var(--danger);
+        border-color: var(--danger);
+        box-shadow: 0 0 0 0.2rem rgb(147 209 205 / 60%);
+    }
+
+.btn-gradient {
+    color: #ffffff;
+    border: 1px solid var(--brand-primary);
+    background-color: var(--link);
+    background: -moz-linear-gradient(-45deg, #34aea1 0%, #00809c 100%);
+    background: -webkit-linear-gradient(-45deg, #34aea1 0%, #00809c 100%);
+    background: linear-gradient(135deg, #34aea1 0%, #00809c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34aea1', endColorstr='#00809c',GradientType=1 );
+    transition: background-image 0.3s ease-in-out;
+    transition: 0.5s all;
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+    .btn-gradient:hover {
+        color: #ffffff;
+        background-color: var(--link);
+        border: 1px solid var(--brand-primary);
+        background: -moz-linear-gradient(-45deg, #34aea1 0%, #00809c 100%);
+        background: -webkit-linear-gradient(-45deg, #34aea1 0%, #00809c 100%);
+        background: linear-gradient(135deg, #34aea1 0%, #00809c 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34AEA1', endColorstr='#00809C',GradientType=1 );
+        transition: background-image 0.3s ease-in-out;
+        transition: 0.5s all;
+        background-position: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+.btn-check:focus + .btn,
+.btn:focus,
+.page-link:focus,
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle,
+.btn-primary:focus,
+.btn:active,
+.btn-link:active,
+.btn-link:focus,
+.accordion-button:focus,
+.form-control:focus, .form-select:focus, .select2-selection:focus, .form-check-input:focus {
+    outline: 0;
+    box-shadow: 0 0 5px 0.25rem var(--focus-highlight) !important;
+}
+
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle,
+.btn-primary:focus {
+    background-color: var(--success) !important;
+    border-color: var(--success) !important;
+}
+
+.btn-outline-danger {
+    color: var(--danger);
+    background-color: transparent;
+    border-color: var(--danger);
+}
+
+    .btn-outline-danger:hover {
+        color: var(--danger-50);
+        background-color: transparent;
+        border-color: var(--danger-50);
+    }
+
+.btn-outline-primary {
+    border: solid 1px var(--brand-primary);
+    color: var(--brand-primary);
+
+}
+
+    .btn-outline-primary:hover {
+        border-color: var(--brand-primary-50);
+        background-color: transparent;
+        color: var(--brand-primary-50);
+    }
+
+    .btn-outline-primary:not(:disabled):not(.disabled):active {
+        color: var(--brand-primary);
+        border: 1px solid var(--brand-primary);
+        background-color: transparent;
+    }
+
+    .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: var(--brand-primary);
+        border-color: var(--brand-primary);
+    }
+
+.btn-outline-secondary {
+    border: solid 1px var(--brand-secondary);
+    color: var(--brand-secondary);
+}
+
+.btn-outline-secondary:hover {
+    border: solid 1px var(--brand-secondary-50);
+    color: var(--brand-secondary-50);
+    background: transparent;
+}
+
+
+.btn-outline-warning {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+    .btn-outline-warning:hover {
+        color: var(--yellow-50);
+        border-color: var(--yellow-50);
+        background-color: transparent;
+    }
+
+.btn-primary {
+    border: solid 3px var(--brand-primary);
+    background-color: var(--brand-primary);
+    color: #ffffff;
+}
+
+    .btn-primary:hover {
+        background-color: var(--brand-primary-75);
+        border-color: transparent;
+    }
+
+    .btn-primary:focus, .btn-primary.focus {
+        color: #fff;
+        background-color: var(--brand-primary);
+        border-color: var(--brand-primary);
+        box-shadow: 0 0 0 0.2rem rgb(147 209 205 / 60%);
+    }
+
+.btn-secondary, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle, .btn-secondary:focus, .btn-secondary.focus {
+    color: #fff;
+    background-color: var(--brand-secondary);
+    border-color: var(--brand-secondary);
+}
+
+    .btn-secondary:hover {
+        color: #fff;
+        background-color: var(--brand-secondary-75);
+        border-color: var(--brand-secondary-75);
+        border-color: transparent;
+    }
+
+.card {
+    border-radius: 3px;
+}
+
+.dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active, .dropdown-item:active {
+    color: #ffffff;
+    background-color: var(--black-75);
+}
+
+.dropdown-toggle:hover {
+    background-color: var(--black-75);
+}
+
+.form-control:disabled, .form-control[readonly], .form-select:disabled {
+    background-color: var(--inactive-input-bg);
+    opacity: 1;
+}
+
+.fw-bold {
+    letter-spacing: .03em;
+}
+
+h3.card-title {
+    font-size: 1.25em;
+}
+
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: .875em;
+    color: var(--danger);
+}
+*/
+.rounded {
+    border-radius: 30px!important;
+}
+/*
+.text-danger {
+    color: var(--danger) !important;
+}
+
+.text-muted {
+    color: var(--muted)!important;
+}
+*/
+.text-primary {
+    color: var(--brand-primary) !important;
+}
+/*
+.text-secondary {
+    color: var(--brand-secondary)!important;
+}*/

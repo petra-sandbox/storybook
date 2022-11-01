@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/fontawesome-pro-6/css/all.css" rel="stylesheet" />
+    <link href="assets/css/my.css" rel="stylesheet" />
+    <link href="assets/css/navigation.css" rel="stylesheet" />
+    <link href="assets/css/my-nav.css" rel="stylesheet" />
+    <script src="assets/js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+    
+<h1 class="mt-5 mb-3">Heading 1</h1>
+<h2 class="mt-5 mb-3">Heading 2</h2>
+<h3 class="mt-3 mb-3">Heading 3</h3>
+<h4>Heading 3</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<!-- ACCORDION STARTS HERE -->
+<div class="accordion mb-3" id="accordionNameDetails">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="accordionName">
+            <button class="btn accordion-button accordion-button-primary btn-primary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordionNameDropdown" aria-expanded="false" aria-controls="accordionNameDropdown">
+                <small class="text-white text-uppercase accordion-title">Accordion title</small>
+            </button>
+        </h2>
+        <div id="accordionNameDropdown" class="accordion-collapse collapse" aria-labelledby="accordionName" data-bs-parent="#accordionNameDetails">
+            <div class="accordion-body">
+
+                <!-- if no data can be shown, display this empty state (it can be hidden with the d-none class) -->
+                <div class="row">
+                    <div class="col-12 p-3">
+                        <p class="text-highlight opacity-50 text-center">We couldn't find any data.</p>
+                    </div>
+                </div>
+                <!-- empty state ends -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- accordion ends -->
+<!-- FORMS START HERE -->
+<form action="/" method="post">
+    <div class="container">
+        <div class="row">
+
+            <!-- actual form fields start here -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <label class="form-label">Input text field:</label>
+                <input type="type" name="name" value="" id="" class="form-control" />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <label class="form-label">Input text field (disabled):</label>
+                <input type="type" name="name" value="" id="" class="form-control" disabled />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <label class="form-label">Select dropdown:</label>
+                <select name="name" value="" id="" class="form-select"></select>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <label class="form-label">Select dropdown:</label>
+                <select name="name" value="" id="" class="form-select" disabled></select>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <label class="form-label">Input date:</label>
+                <input type="date" name="name" value="" id="" class="form-control" />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <label class="form-label">Input date (disabled):</label>
+                <input type="date" name="name" value="" id="" class="form-control" disabled />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <label for="" class="form-label">File upload:</label>
+                <input class="form-control" type="file" id="">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3">
+                <label for="" class="form-label">File upload (disabled):</label>
+                <input class="form-control" type="file" id="" disabled>
+            </div>
+
+            <!-- -d-flex align-items-end and mb-2 on the .form-check makes the checkbox be visually centered compared to the input fields around it -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-end">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="">
+                    <label class="form-check-label" for="">
+                        Default checkbox
+                    </label>
+                </div>
+            </div>
+
+            <!-- -d-flex align-items-end and mb-2 on the .form-check makes the checkbox be visually centered compared to the input fields around it -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-end">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked>
+                    <label class="form-check-label" for="">
+                        Checked checkbox
+                    </label>
+                </div>
+            </div>
+
+            <!-- -d-flex align-items-end and mb-2 on the .form-check makes the checkbox be visually centered compared to the input fields around it -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-end">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="" disabled>
+                    <label class="form-check-label" for="">
+                        Default checkbox (disabled)
+                    </label>
+                </div>
+            </div>
+
+            <!-- -d-flex align-items-end and mb-2 on the .form-check makes the checkbox be visually centered compared to the input fields around it -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-end">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" value="" id="" checked disabled>
+                    <label class="form-check-label" for="">
+                        Checked checkbox (disabled)
+                    </label>
+                </div>
+            </div>
+
+            <!-- -d-flex align-items-end and mb-2 on the .form-check makes the checkbox be visually centered compared to the input fields around it -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-end">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="" id="">
+                    <label class="form-check-label" for="">
+                        Default radio
+                    </label>
+                </div>
+            </div>
+
+            <!-- -d-flex align-items-end and mb-2 on the .form-check makes the checkbox be visually centered compared to the input fields around it -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-end">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="" id="" checked>
+                    <label class="form-check-label" for="">
+                        Checked radio
+                    </label>
+                </div>
+            </div>
+
+            <!-- -d-flex align-items-end and mb-2 on the .form-check makes the checkbox be visually centered compared to the input fields around it -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-end">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="" id="" disabled>
+                    <label class="form-check-label" for="">
+                        Default radio (disabled)
+                    </label>
+                </div>
+            </div>
+
+            <!-- -d-flex align-items-end and mb-2 on the .form-check makes the checkbox be visually centered compared to the input fields around it -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-3 d-flex align-items-end">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="" id="" checked disabled>
+                    <label class="form-check-label" for="">
+                        Checked radio (disabled)
+                    </label>
+                </div>
+            </div>
+
+
+        </div>
+</form>
+<!-- forms end here -->
+<!-- BUTTONS START -->
+<h2 class="mt-5 mb-3">Buttons</h2>
+
+<p>.btn-primary with and without icon</p>
+<!-- notice the icon has a me-1 class on it, to create distance between the icon and the button text -->
+<button class="btn btn-primary"><i class="fa-light fa-circle-plus me-1"></i>Add</button>
+<button class="btn btn-primary">Submit</button>
+
+<p class="mt-3">.btn-outline-primary with and without icon</p>
+<!-- notice the icon has a me-1 class on it, to create distance between the icon and the button text -->
+<button class="btn btn-outline-primary"><i class="fa-light fa-circle-plus me-1"></i>Add</button>
+<button class="btn btn-outline-primary">Submit</button>
+
+<p class="mt-3">.btn-secondary with and without icon</p>
+<!-- notice the icon has a me-1 class on it, to create distance between the icon and the button text -->
+<button class="btn btn-secondary"><i class="fa-light fa-circle-plus me-1"></i>Add</button>
+<button class="btn btn-secondary">Submit</button>
+
+<p class="mt-3">.btn-outline-secondary with and without icon</p>
+<!-- notice the icon has a me-1 class on it, to create distance between the icon and the button text -->
+<button class="btn btn-outline-secondary"><i class="fa-light fa-circle-plus me-1"></i>Add</button>
+<button class="btn btn-outline-secondary">Submit</button>
+
+<p class="mt-3">.btn-danger with and without icon</p>
+<!-- notice the icon has a me-1 class on it, to create distance between the icon and the button text -->
+<button class="btn btn-danger"><i class="fa-light fa-circle-xmark me-1"></i>Clear all</button>
+<button class="btn btn-danger">Cancel</button>
+
+<p class="mt-3">.btn-outline-danger with and without icon</p>
+<!-- notice the icon has a me-1 class on it, to create distance between the icon and the button text -->
+<button class="btn btn-outline-danger"><i class="fa-light fa-circle-xmark me-1"></i>Clear all</button>
+<button class="btn btn-outline-danger">Cancel</button>
+
+<p class="mt-3">Disabled with and without icon</p>
+<!-- notice the icon has a me-1 class on it, to create distance between the icon and the button text -->
+<button class="btn btn-primary" disabled><i class="fa-light fa-circle-xmark me-1"></i>Clear all</button>
+<button class="btn btn-primary" disabled>Cancel</button>
+<button class="btn btn-outline-primary" disabled><i class="fa-light fa-circle-xmark me-1"></i>Clear all</button>
+<button class="btn btn-outline-primary" disabled>Cancel</button>
+
+
+<!-- buttons end -->
+<!-- CUSTOM CHECKBOXES START -->
+<h2 class="mt-5 mb-3">Custom checkboxes</h2>
+
+<div class="position-relative d-inline-block p-2 me-1 mb-2 px-2">
+    <div class="d-flex h-100">
+        <input type="checkbox" class="add-check w-100 h-100 position-absolute" name="tagCheckbox" id="tagCheckbox" />
+        <label class="add-check-label form-label mb-0" for="tagCheckbox">Tag checkbox enabled, unchecked</label>
+    </div>
+</div>
+
+<div class="position-relative d-inline-block p-2 me-1 mb-2 px-2">
+    <div class="d-flex h-100">
+        <input type="checkbox" class="add-check w-100 h-100 position-absolute" name="tagCheckbox" id="tagCheckbox" checked />
+        <label class="add-check-label form-label mb-0" for="tagCheckbox">Tag checkbox enabled, checked</label>
+    </div>
+</div>
+
+<div class="position-relative d-inline-block p-2 me-1 mb-2 px-2">
+    <div class="d-flex h-100">
+        <input type="checkbox" class="add-check w-100 h-100 position-absolute" name="tagCheckbox" id="tagCheckbox" checked disabled />
+        <label class="add-check-label form-label mb-0" for="tagCheckbox">Tag checkbox disabled, checked</label>
+    </div>
+</div>
+
+<div class="position-relative d-inline-block p-2 me-1 mb-2 px-2">
+    <div class="d-flex h-100">
+        <input type="checkbox" class="add-check w-100 h-100 position-absolute" name="tagCheckbox" id="tagCheckbox" disabled />
+        <label class="add-check-label form-label mb-0" for="tagCheckbox">Tag checkbox disabled, unchecked</label>
+    </div>
+</div>
+<!-- custom checkboxes end end -->
+<!-- PILL BADGES START -->
+<h2 class="mt-5 mb-3">Pill badges</h2>
+<p>Pill badges are not super accessible, so they should only be used to show small pieces of information e.g.: abbreviations, 1-3 digit number percentages.</p>
+
+<p class="fw-bold">Transparent pill badges: they look better</p>
+<!-- use me-1 on the <span> if you want space on the side, and use mb-3 if you want space under it -->
+<span class="badge rounded-pill badge-danger mb-3">Danger</span>
+<span class="badge rounded-pill badge-danger mb-3">-10%</span>
+<span class="badge rounded-pill badge-danger mb-3">ROI</span>
+<br />
+<span class="badge rounded-pill badge-success mb-3">Success</span>
+<span class="badge rounded-pill badge-success mb-3">+10%</span>
+<span class="badge rounded-pill badge-success mb-3">CTR</span>
+<br />
+<span class="badge rounded-pill badge-warning mb-3">Warning</span>
+<span class="badge rounded-pill badge-warning mb-3"><2%</span>
+<span class="badge rounded-pill badge-warning mb-3">ROI</span>
+<br />
+<span class="badge rounded-pill badge-info mb-3">Info</span>
+<span class="badge rounded-pill badge-info mb-3">FYI</span>
+<span class="badge rounded-pill badge-info mb-3">BTW</span>
+
+
+<p class="fw-bold">Non-transparent pill badges: because sometimes transparency won't work :)</p>
+<!-- use me-1 on the <span> if you want space on the side, and use mb-3 if you want space under it -->
+<span class="badge rounded-pill badge-danger-100 mb-3">Danger</span>
+<span class="badge rounded-pill badge-danger-100 mb-3">-10%</span>
+<span class="badge rounded-pill badge-danger-100 mb-3">ROI</span>
+<br />
+<span class="badge rounded-pill badge-success-100 mb-3">Success</span>
+<span class="badge rounded-pill badge-success-100 mb-3">+10%</span>
+<span class="badge rounded-pill badge-success-100 mb-3">CTR</span>
+<br />
+<span class="badge rounded-pill badge-warning-100 mb-3">Warning</span>
+<span class="badge rounded-pill badge-warning-100 mb-3"><2%</span>
+<span class="badge rounded-pill badge-warning-100 mb-3">ROI</span>
+<br />
+<span class="badge rounded-pill badge-info-100 mb-3">Info</span>
+<span class="badge rounded-pill badge-info-100 mb-3">FYI</span>
+<span class="badge rounded-pill badge-info-100 mb-3">BTW</span>
+
+
+<!-- badges end -->
+
+<h2 class="mt-5 mb-3">List-item</h2>
+
+<!-- LIST ITEMS START -->
+<div class="row list-item align-items-center px-0 p-3 m-0 mb-2">
+    <p class="mb-0">Basic list item</p>
+</div>
+
+<div class="row list-item list-item-success align-items-center px-0 p-3 m-0 mb-2">
+    <p class="mb-0">List-item indicating success or an active state</p>
+</div>
+
+<div class="row list-item list-item-warning align-items-center px-0 p-3 m-0 mb-2">
+    <p class="mb-0">List-item indicating a warning</p>
+</div>
+
+<div class="row list-item list-item-danger align-items-center px-0 p-3 m-0 mb-2">
+    <p class="mb-0">List-item indicating an error</p>
+</div>
+
+<div class="row list-item list-item-inactive align-items-center px-0 p-3 m-0 mb-2">
+    <p class="mb-0">List-item indicating an inactive state</p>
+</div>
+<!-- list item ends -->
+
+<h3 class="mt-3 mb-3">Examples for using list-item</h3>
+<p>Since the list item is a Bootstrap .row, we can use Bootstrap .col classes in it to control the layout.</p>
+
+<div class="row list-item align-items-center px-0 p-3 m-0 mb-2">
+    <!-- use BS columns for layout -->
+    <div class="col-12 col-lg-8">
+        <h3>App name</h3>
+        <!-- you will need an mb-0 on the last item, if you want the content to be vertically centered-->
+        <p class="mb-0">Some info about this app, like a Bundle ID</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fad fa-external-link-alt text-primary"></i>
+        </button>
+        <button class="btn icon-btn rounded p-1">
+            <i class="fad fa-edit text-primary"></i>
+        </button>
+        <button class="btn icon-btn rounded p-1">
+            <i class="fad fa-trash-alt text-danger"></i>
+        </button>
+    </div>
+</div>
+
+<h3 class="mt-3 mb-3">Notifications using .list-item</h3>
+<p>Since the list item is a Bootstrap .row, we can use Bootstrap .col classes in it to control the layout.</p>
+
+<div class="row list-item list-item-info list-item-unread align-items-center px-0 p-3 m-0 mb-2">
+    <div class="col-12 col-lg-8">
+        <p class="small text-muted mb-1">08. 08. 20201.<span class="badge rounded-pill badge-info-100 fw-bold ms-1">New</span></p>
+        <h3>P&L reports are now available</h3>
+        <p class="mb-0">P&L reports are now available for all publishers. Go to Account / Reports to see it.</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fa-duotone fa-envelope-open text-secondary" data-toggle="tooltip" data-placement="top" title="Mark as read"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row list-item list-item-info align-items-center px-0 p-3 m-0 mb-2">
+    <div class="col-12 col-lg-8">
+        <p class="small text-muted mb-1">08. 08. 20201.</p>
+        <h3>P&L reports are now available</h3>
+        <p class="mb-0">P&L reports are now available for all publishers. Go to Account / Reports to see it.</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fa-duotone fa-envelope text-secondary" data-toggle="tooltip" data-placement="top" title="Mark as unread"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row list-item list-item-success list-item-unread align-items-center px-0 p-3 m-0 mb-2">
+    <div class="col-12 col-lg-8">
+        <p class="small text-muted mb-1">08. 08. 20201.<span class="badge rounded-pill badge-success-100 fw-bold ms-1">New</span></p>
+        <h3>P&L reports are now available</h3>
+        <p class="mb-0">P&L reports are now available for all publishers. Go to Account / Reports to see it.</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fa-duotone fa-envelope-open text-primary" data-toggle="tooltip" data-placement="top" title="Mark as read"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row list-item list-item-success align-items-center px-0 p-3 m-0 mb-2">
+    <div class="col-12 col-lg-8">
+        <p class="small text-muted mb-1">08. 08. 20201.</p>
+        <h3>P&L reports are now available</h3>
+        <p class="mb-0">P&L reports are now available for all publishers. Go to Account / Reports to see it.</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fa-duotone fa-envelope text-primary" data-toggle="tooltip" data-placement="top" title="Mark as unread"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row list-item list-item-warning list-item-unread align-items-center px-0 p-3 m-0 mb-2">
+    <div class="col-12 col-lg-8">
+        <p class="small text-muted mb-1">08. 08. 20201.<span class="badge rounded-pill badge-warning-100 fw-bold ms-1">New</span></p>
+        <h3>Some warning</h3>
+        <p class="mb-0">On May 20 2021 MyAppvestor will be down for maintenance.</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fa-duotone fa-envelope-open text-highlight" data-toggle="tooltip" data-placement="top" title="Mark as read"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row list-item list-item-warning align-items-center px-0 p-3 m-0 mb-2">
+    <div class="col-12 col-lg-8">
+        <p class="small text-muted mb-1">08. 08. 20201.</p>
+        <h3>Some warning</h3>
+        <p class="mb-0">On May 20 2021 MyAppvestor will be down for maintenance.</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fa-duotone fa-envelope text-highlight" data-toggle="tooltip" data-placement="top" title="Mark as unread"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row list-item list-item-danger list-item-unread align-items-center px-0 p-3 m-0 mb-2">
+    <div class="col-12 col-lg-8">
+        <p class="small text-muted mb-1">08. 08. 20201.<span class="badge rounded-pill badge-danger-100 fw-bold ms-1">New</span></p>
+        <h3>Some error</h3>
+        <p class="mb-0">Your app was rejected. You can find more information about why in the e-mail our UA team sent to you.</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fa-duotone fa-envelope-open text-danger" data-toggle="tooltip" data-placement="top" title="Mark as read"></i>
+        </button>
+    </div>
+</div>
+
+<div class="row list-item list-item-danger align-items-center px-0 p-3 m-0 mb-2">
+    <div class="col-12 col-lg-8">
+        <p class="small text-muted mb-1">08. 08. 20201.</p>
+        <h3>Some error</h3>
+        <p class="mb-0">Your app was rejected. You can find more information about why in the e-mail our UA team sent to you.</p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex flex-row justify-content-end">
+        <button class="btn icon-btn rounded p-1">
+            <i class="fa-duotone fa-envelope text-danger" data-toggle="tooltip" data-placement="top" title="Mark as unread"></i>
+        </button>
+    </div>
+</div>
+
+<!-- ALERTS -->
+<h2 class="mt-5 mb-3">Alerts</h2>
+
+<div class="alert alert-success" role="alert" id="">
+    <h3 class="text-primary"><i class="fa-duotone fa-circle-check me-1"></i>Success</h3>
+    <p class="mb-0">Your application was successfully submitted for approval. We will get back to you withing 3-5 business days.</p>
+</div>
+
+<div class="alert alert-danger" role="alert" id="">
+    <h3 class="text-danger"><i class="fa-duotone fa-circle-exclamation me-1"></i>Something went wrong :(</h3>
+    <p class="mb-0">We couldn't submit your application. Please, try again.</p>
+</div>
+
+<div class="alert alert-warning" role="alert" id="">
+    <h3><i class="fa-duotone fa-triangle-exclamation text-warning me-1"></i>Something went wrong :(</h3>
+    <p class="mb-0">We couldn't submit your application. Please, try again.</p>
+</div>
+
+<h2 class="mt-5 mb-3">The box</h2>
+<p>The box is used to wrap interactive elements.</p>
+
+<!-- BOX STARTS -->
+<div class="box shadow-sm align-items-center border-1 h-100 p-3">
+    <h3>Read FAQ</h3>
+    <p>Get answers instantly, and get familair with what you can do on MyAppvestor.</p>
+    <button class="btn btn-primary">Go to FAQ</button>
+</div>
+<!-- box ends -->
+
+<p class="mt-3">Box with additional classes, spacing, alignment issues due to uneven content, etc.</p>
+
+<div class="row">
+    <div class="col-12 col-md-6">
+        <!-- box with less content -->
+        <div class="box shadow-sm d-flex flex-column align-items-baseline h-100 p-3">
+            <h3>Read FAQ</h3>
+            <p>Get answers instantly, and get familair with what you can do on MyAppvestor.</p>
+            <button class="btn btn-primary d-block mt-auto mb-0">Go to FAQ</button>
+        </div>
+        <!-- -->
+    </div>
+    <div class="col-12 col-md-6">
+        <!-- box with more content -->
+        <div class="box shadow-sm p-3">
+            <h3>Complete your profile</h3>
+            <p>Add more information and additional colleagues to your company account on MyAppvestor</p>
+            <button class="btn btn-primary">Go to Profile</button>
+        </div>
+        <!--  -->
+    </div>
+</div>
+
+<!-- ICONS START -->
+<h2 class="mt-5 mb-3">Most commonly used FontAwesome 6 icons</h2>
+<p>Use text classes like .text-primary or .text-danger to color the icons. The icons inherit the color of their parent element.</p>
+<p>
+    Duotone:
+    <i class="fa-duotone fa-circle-plus"></i>
+    <i class="fa-duotone fa-circle-xmark"></i>
+    <i class="fa-duotone fa-upload"></i>
+    <i class="fa-duotone fa-download"></i>
+    <i class="fa-duotone fa-upload"></i>
+    <i class="fa-duotone fa-pen-to-square"></i>
+    <i class="fa-duotone fa-pencil"></i>
+    <i class="fa-duotone fa-magnifying-glass"></i>
+    <i class="fa-duotone fa-calendar-days"></i>
+    <i class="fa-duotone fa-toggle-on"></i>
+    <i class="fa-duotone fa-toggle-off"></i>
+    <i class="fa-duotone fa-trash-can"></i>
+    <i class="fa-duotone fa-circle-exclamation"></i>
+    <i class="fa-duotone fa-triangle-exclamation"></i>
+    <i class="fa-duotone fa-arrow-up-right-from-square"></i>
+    <i class="fa-duotone fa-circle-check"></i>
+</p>
+
+<p>
+    Solid:
+    <i class="fa-solid fa-circle-plus"></i>
+    <i class="fa-solid fa-circle-xmark"></i>
+    <i class="fa-solid fa-upload"></i>
+    <i class="fa-solid fa-download"></i>
+    <i class="fa-solid fa-upload"></i>
+    <i class="fa-solid fa-pen-to-square"></i>
+    <i class="fa-solid fa-pencil"></i>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-calendar-days"></i>
+    <i class="fa-solid fa-toggle-on"></i>
+    <i class="fa-solid fa-toggle-off"></i>
+    <i class="fa-solid fa-trash-can"></i>
+    <i class="fa-solid fa-circle-exclamation"></i>
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    <i class="fa-solid fa-circle-check"></i>
+</p>
+
+<p>
+    Light:
+    <i class="fa-light fa-circle-plus"></i>
+    <i class="fa-light fa-circle-xmark"></i>
+    <i class="fa-light fa-upload"></i>
+    <i class="fa-light fa-download"></i>
+    <i class="fa-light fa-upload"></i>
+    <i class="fa-light fa-pen-to-square"></i>
+    <i class="fa-light fa-pencil"></i>
+    <i class="fa-light fa-magnifying-glass"></i>
+    <i class="fa-light fa-calendar-days"></i>
+    <i class="fa-light fa-toggle-on"></i>
+    <i class="fa-light fa-toggle-off"></i>
+    <i class="fa-light fa-trash-can"></i>
+    <i class="fa-light fa-circle-exclamation"></i>
+    <i class="fa-light fa-triangle-exclamation"></i>
+    <i class="fa-light fa-arrow-up-right-from-square"></i>
+    <i class="fa-light fa-circle-check"></i>
+</p>
+
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>

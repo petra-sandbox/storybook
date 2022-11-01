@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Barlow-Light";
+  src: url(../fonts/Barlow-Light.ttf);
+}
+
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url(../fonts/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Barlow-Medium";
+  src: url(../fonts/Barlow-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Barlow-SemiBold";
+  src: url(../fonts/Barlow-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Barlow-Bold";
+  src: url(../fonts/Barlow-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-MonoRegular";
+  src: url(../fonts/RobotoMono-Regular.ttf);
+}
+
+ :root {
+  /* DARK MODE */  
+  --headings: #f7f7f7; /* tailwind shade 50 of #333333 */
+  --text: #c8c8c8; /* tailwind shade 200 of #333333 */
+  /* LIGHT MODE */
+  --headings: #333333;
+  --text: #515151;
+} 
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+header {
+  background-color: var(--black);
+}
+
+h1,
+h2 {
+  color: var(--headings);
+  font-family: "Barlow-Bold";
+}
+
+h3 {
+  color: var(--headings);
+  font-size: 1.25rem;
+  font-family: "Barlow-Bold";
+  line-height: 1.5;
+}
+
+h4 {
+  color: var(--headings);
+  font-family: "Barlow-Bold";
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* removes the ugly default dropdown icon from a datalist element */
+[list]::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+p,
+span,
+a,
+input,
+label,
+select,
+small,
+li {
+  font-family: "Barlow-Regular";
+}
+
+button {
+  font-family: "Barlow-SemiBold";
+} 
+
+p.fw-light,
+a.fw-light {
+  font-family: "Barlow-Light";
+}
+
+a {
+  transition: 0.3s ease-in-out;
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-primary-50);
+}
+
+p,
+label {
+  color: var(--text);
+}
+
+a, button {
+  transition: .3s ease-in-out;
+}
+
+span {
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+ul {
+  list-style-position: inside;
+}

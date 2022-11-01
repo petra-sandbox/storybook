@@ -1,0 +1,116 @@
+<!-- Colors.stories.mdx -->
+
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs';
+
+import { themes, ThemeProvider, convert, ensure } from '@storybook/theming';
+
+<Meta title="Brand/Colors" />
+
+# Colors
+
+## Brand colors
+
+**Brand secondary** is currently rarely used in the web platform UIs due to accessibility. It's still used in graphics.
+
+Use **brand primary** for CTA-s and preferably success states, too, so we don't have 2 slightly different greens in the UI.
+
+<ColorPalette>
+<ColorItem
+    title="Brand gradient"
+    subtitle="Use .gradient-bg class"
+    colors={{ '': 'linear-gradient(135deg, #34aea1 0%, #00809c 100%)' }}
+  />
+  <ColorItem
+    title="Brand primary color"
+    subtitle="use as e.g.: bg-primary or bg-primary-400"
+    colors={{ 'Default': '#34b4a1' }}
+  />
+  <ColorItem
+    title="Brand primary shades a'la Tailwind"
+    subtitle="use e.g.: bg-primary-300"
+    colors={{ 50: "#f1fcf9",
+          100: "#d0f7ee",
+          200: "#a1eedd",
+          300: "#69dfc9",
+          400: "#34b4a1",
+          500: "#21ab98",
+          600: "#18897c",
+          700: "#176e65",
+          800: "#175853",
+          900: "#184945" }} />
+          <ColorItem
+    title="Brand secondary color, dark blue"
+    subtitle="use as e.g.: bg-darkblue or bg-primary-500"
+    colors={{ 'Default': '#173158' }}
+  />
+<ColorItem 
+    title="Brand secondary color, dark blue" 
+    subtitle="Use as e.g.: bg-darkblue or bg-darkblue-900" 
+    colors={{ 50: "#f2f6fd",
+          100: "#e4ecfa",
+          200: "#c3d8f4",
+          300: "#8eb7eb",
+          400: "#5292de",
+          500: "#2c75cb",
+          600: "#1d5aac",
+          700: "#18488c",
+          800: "#183f74",
+          900: "#173158" }}
+  />
+  <ColorItem 
+    title="Brand dark grey" 
+    subtitle="use as e.g.: bg-darkgrey or bg-darkgrey-900" 
+    colors={{ 'Default': '#333333' }} 
+  />
+  <ColorItem
+    title="Brand dark grey shades a'la Tailwind"
+    subtitle="use e.g.: bg-darkgrey-400"
+    colors={{ 50: "#f7f7f7",
+          100: "#e3e3e3",
+          200: "#c8c8c8",
+          300: "#a4a4a4",
+          400: "#818181",
+          500: "#666666",
+          600: "#515151",
+          700: "#434343",
+          800: "#383838",
+          900: "#333333" }} />
+</ColorPalette>
+
+## Tailwind Colors
+
+We use Tailwind's default red and yellow a lot to indicate e.g.: statuses.
+
+<ColorPalette>
+  <ColorItem
+    title="Yellow"
+    subtitle="use e.g.: bg-yellow-300"
+    colors={{ 50: "#fefce8",
+          100: "#fef9c3",
+          200: "#fef08a",
+          300: "#fde047",
+          400: "#facc15",
+          500: "#eab308",
+          600: "#ca8a04",
+          700: "#a16207",
+          800: "#854d0e",
+          900: "#713f12" }} />
+<ColorItem 
+    title="Brand secondary color, dark blue" 
+    subtitle="Use as e.g.: bg-darkblue or bg-darkblue-900" 
+    colors={{ 50: "#fef2f2",
+          100: "#fee2e2",
+          200: "#fecaca",
+          300: "#fca5a5",
+          400: "#f87171",
+          500: "#ef4444",
+          600: "#dc2626",
+          700: "#b91c1c",
+          800: "#991b1b",
+          900: "#7f1d1d" }}
+  />
+
+</ColorPalette>
+
+The rest of the Tailwind shades can be found here: https://tailwindcss.com/docs/customizing-colors
+

@@ -1,0 +1,150 @@
+import { Meta } from '@storybook/addon-docs';
+import { Typeset } from '@storybook/addon-docs/blocks';
+import Code from './assets/code-brackets.svg';
+import Colors from './assets/colors.svg';
+import Comments from './assets/comments.svg';
+import Direction from './assets/direction.svg';
+import Flow from './assets/flow.svg';
+import Plugin from './assets/plugin.svg';
+import Repo from './assets/repo.svg';
+import StackAlt from './assets/stackalt.svg';
+
+<Meta title="Brand/Typography" />
+
+export const typography = {
+  type: {
+    light: '"Barlow-Regular", Helvetica, Arial, sans-serif',
+    primary: '"Barlow-Medium", Helvetica, Arial, sans-serif',
+    lead: '"Barlow-Medium", Helvetica, Arial, sans-serif',
+    heading: '"Barlow-SemiBold", Helvetica, Arial, sans-serif'
+  },
+  weight: {
+    regular: '400',
+    semibold: '600',
+    bold: '700',
+    extrabold: '800',
+    black: '900',
+  },
+  size: {
+    bodyTextSize: 16,
+    smallSize: 14,
+    leadSize: 18,
+    h3Size: 20,
+    h2Size: 24,
+    h1Size: 30
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+# Typography
+**Font:** Barlow
+
+**Weights:** 300 (light), 400 (regular), 600 (semibold), 700 (bold), 800 (extrabold), 900 (black)
+
+## **Heading sizes**
+
+Semantic use of headings:
+- only use one title (h1) per page, at the top of the page
+- Do not skip heading levels e.g.: from h2 to h5 (you can skip headings in the other direction e.g.: from h5 to h2)
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h1Size)
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={"H1 - Heading page title"}
+  fontFamily={typography.type.heading}
+/>
+
+`<h1 class="text-3xl font-semibold">H1 - Heading page title</h1>`
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h2Size)
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={"H2 - Heading section title"}
+  fontFamily={typography.type.heading}
+/>
+
+`<h2 class="text-2xl font-semibold">H2 - Heading section title</h2>`
+
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h3Size)
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={"H3"}
+  fontFamily={typography.type.heading}
+/>
+
+`<h3 class="text-xl font-semibold">H3</h3>`
+
+
+
+## **Body text sizes**
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.leadSize)
+  ]}
+  fontWeight={typography.weight.medium}
+  sampleText={"Lead paragraph for when we don't want to use headings for either stylistic or semantic reasons."}
+  fontFamily={typography.type.lead}
+/>
+
+`<p class="text-lg"></p>`
+
+<hr/>
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.leadSize)
+  ]}
+  fontWeight={typography.weight.semibold}
+  sampleText={"Lead paragraph but bold."}
+  fontFamily={typography.type.lead}
+/>
+
+`<p class="text-lg font-bold"></p>`
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.bodyTextSize)
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={"Paragraph text for most of the page's content."}
+  fontFamily={typography.type.primary}
+/>
+
+`<p></p>`
+
+<hr/>
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.smallSize)
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={"Small, secondary text for explanatory captions or low-priority info."}
+  fontFamily={typography.type.light}
+/>
+
+`<p class="text-sm"></p>`
+
+## **Tailwind**
+
+More resources for typography in Tailwind: https://tailwindcss.com/docs/font-size#setting-the-font-size
+## **Color in text**
+
+This needs to be updated since Tailwind.
+
+| Text | CSS variable | **Light mode** | **Dark mode** |
+| ---- | ---- | ----------- | ----------- |
+| Heading color | `--headings` | #212121 | #FFFFFF |
+| Text color | `--text` | #595959 | #EBEBEB |
+| Muted or inactive text color | `--muted` | #A2A2A2 | #A2A2A2 |
+| Link | `--brand-primary` | #34AEA1 | #34AEA1 |
+

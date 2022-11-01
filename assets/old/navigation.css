@@ -1,0 +1,182 @@
+
+.dropdown-item {
+  padding: 10px 10px;
+  color: #ffffff;
+  font-family: "Barlow-Light";
+  font-size: 0.9em;
+  background-color: var(--black);
+}
+
+
+.dropdown-menu {
+  top: 0;
+  left: 200px;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+}
+
+.dropdown-menu.show {
+  transition: 0.3s ease-in-out;
+  animation-duration: 0.5s;
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.header-noscript-placeholder {
+  display: none;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--apv-light-blue);
+}
+
+li.nav-item.active {
+  border-left: 3px solid #ffffff;
+}
+
+.nav-link {
+    transition: 0.3s ease-in-out;
+    padding: 10px 10px;
+    font-family: "Barlow-Bold";
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+}
+
+    
+.nav-link:hover {
+        color: #34b4a1;
+    }
+
+li.active > .dropdown-menu {
+  left: 197px;
+}
+
+li.inactive {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.nav-icon {
+  font-size: 1.2em;
+}
+
+.nav-notification {
+  left: 17px;
+  top: 0;
+}
+
+@media all and (max-width: 991px) {
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .navbar-nav .dropdown-menu {
+    position: static;
+    top: 0;
+  }
+
+}
+
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: unset;
+  }
+
+  .navbar-collapse {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 500px;
+  }
+
+  /* div wrapping the Support and Sign out btn in the navigation */
+  #nav-btns {
+    flex-grow: 1
+  }
+}
+
+/* animations */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+}
+
+/* temporary stuff for vertical menu */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #212121;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #595959;
+  box-shadow: inset 0 0 6px rgba(92, 110, 137, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(92, 110, 137, 0.5);
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: unset;
+  }
+}
+
+.dropdown-menu.show {
+  transition: 0.3s ease-in-out;
+  animation-duration: 0.5s;
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+@keyframes slideIn {
+   0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  } 
+}

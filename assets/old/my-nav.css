@@ -1,0 +1,64 @@
+/* this document is to format the vertical menu on the side that the users that are logged in to MyAppvestor see */
+
+header {
+    z-index: 1000;
+}
+
+#desktopHeader {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-collapse {
+    overflow-y: scroll;
+}
+
+@media all and (min-width: 992px) {
+    header > nav {
+        height: 100vh !important;
+    }
+
+    header {
+        max-width: 230px;
+    }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: unset;
+  }
+
+    .navbar-collapse {
+        height: 100vh;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .navbar-collapse {
+        max-height: 100vh;
+    }
+}
+
+.dropdown-menu.show {
+  transition: 0.3s ease-in-out;
+  animation-duration: 0.5s;
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+@keyframes slideIn {
+   0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  } 
+}
